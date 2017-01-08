@@ -1,0 +1,4 @@
+Do rozwi¹zania zadania u¿y³em œrodowiska linuxowego (cygwig), C:GMP - program zosta³ napisany w C.
+Generalnie metoda przeze mnie u¿ywa to 'meet-in-the-middle', a dok³adniej: https://en.wikipedia.org/wiki/Baby-step_giant-step
+Uwa¿am, ¿e mój algorytm dzia³a poprawnie i szybko (oko³o 20 sekund zajmuje mu liczenie ogromnych wartoœci).
+A logarytm dyskretny mo¿na inaczej obliczyæ algorytmu: https://pl.wikipedia.org/wiki/Redukcja_Pohliga-Hellmana

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <gmp.h>
 
-void quicksort_gmp(int left, int right,mpz_t *tab,long int *nr)
+void quicksort_gmp(int left, int right,mpz_t *tab,long long int *nr)
 {
 	int i,j,piwotnr;
 	int temp;
@@ -39,7 +39,7 @@ int main()
 	mpz_init_set_str(p,"13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084171",10);
 	mpz_init_set_str(g,"7986892892644964809678573127386712039532852301584169807905118050675340956203921770492145296166905084126855959303199420887184894225814618909287510943703491",10);
 	mpz_init_set_str(h,"10353923830460929735328496784361539060361238653685678824483529175983950553832878320450730127803739628395851941601331144145295269915794187037493934868513335",10);
-	unsigned long int koniec=1048576; // 2 do potęgi 20 
+	unsigned long long int koniec=1048576; // 2 do potęgi 20  , jeden long więcej - kolejne 32 bity
 	
 	///TEST////Pole do testu innych wartości
 	/*koniec=6;
@@ -62,11 +62,11 @@ int main()
 	mpz_init(inwersja);
 	mpz_t temporary;
 	mpz_init(temporary);
-	long int *nrL=malloc(sizeof(long int)*koniec);//tablica przechowujaca x0
-	long int *nrP=malloc(sizeof(long int)*koniec);//tablica przechowujaca x1, albo odwrotnie
+	long long int *nrL=malloc(sizeof(long int)*koniec);//tablica przechowujaca x0
+	long long int *nrP=malloc(sizeof(long int)*koniec);//tablica przechowujaca x1, albo odwrotnie
 	mpz_t *L=malloc(sizeof(mpz_t)*koniec);//tablica przechowujaca kolejne elementy g^x1*Y
 	mpz_t *P=malloc(sizeof(mpz_t)*koniec);//tablica przechowujaca kolejne elementy h/g^x0
-	int unsigned long i=0;
+	int unsigned long long i=0;
 	mpz_init(P[0]);
 	mpz_set_ui(P[0],1);
 	nrP[0]=0;
@@ -91,7 +91,7 @@ int main()
 	printf("SORTOWANIE 2 SKONCZONE\n");
 	
 	int flag=1;
-	int unsigned long j=0;
+	int unsigned long long j=0;
 	i=0;
 	printf("Rozpoczeto porownywanie tablic...\n"); //jeśli obie strony (L i P) są sobie równie = znaleziono X
 	int last;
