@@ -1,6 +1,0 @@
-Skrypt powoduje, ¿e dla dwóch ró¿nych plików (na repo 'test2.7z') generuj¹ siê ró¿ne inne skróty.
-Natomiast dla tych dwóch podobnych (na repo test.zip - oba pliki .txt z nieznaczn¹ zmian¹ miêdzy sob¹) SHA-256 i MD5 generuj¹ równie¿ inne skróty, ró¿ne w ka¿dym b¹dŸ razie, zupe³nie.
-Z kolei ssdeep i md5deep generuj¹ skróty, które nieznacznie siê ró¿ni¹ miêdzy sob¹.
-
-Nie mia³em pomys³u w C / C++, wiêc ¿eby to zaimplementowaæ, musia³em siê nauczyæ na szybko Pythona na tyle, aby zrealizowaæ zadanko - ca³kiem okej jest ten jêzyk :)
-Czyta³em i ogl¹da³em ró¿ne kursy, ale m.in. st¹d: http://www.forensicswiki.org/wiki/Ssdeep
