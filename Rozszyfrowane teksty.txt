@@ -1,0 +1,15 @@
+ECB:
+
+Deserializacja niezaufanych danych pochodz¹cych od u¿ytkownika wiêkszoœci developerów nie powinna wydawaæ siê problematyczna. Dlaczego mia³aby byæ? W koñcu co najwy¿ej serwer dostanie dane, które po zdeserializowaniu stworz¹ obiekt inny od oczekiwanego, co spowoduje b³¹d aplikacji i przerwanie wykonania.
+
+================================================================================================================
+
+CBC:
+
+Wykorzystanie Race Condition, to metoda ataku polegaj¹ca na wykonaniu zapytania w czasie krótszym ni¿ trwa weryfikacja warunków danej akcji aplikacji, np. podczas wgrywania plików na serwer, czas miêdzy zapisaniem pliku na dysku a weryfikacj¹ jego typu czy rozszerzenia, pozwala na wykonanie zapytania do zapisanego zasobu
+
+================================================================================================================
+
+CTR:
+
+Deobfuskacja kodu jest d³ugim i mozolnym procesem sk³adania czêœci oryginalnego skryptu z zakodowanych ró¿nymi metodami fragmentów. Czêsto w deobfuskacji nie chodzi o uzyskanie oryginalnego kodu (co jest zazwyczaj niemo¿liwe w racjonalnym czasie), ale o poznanie zasady dzia³ania i logiki, ukrytej na przyk³ad w z³oœliwych skryptach przekierowuj¹cych u¿ytkowników na przyk³ad na strony hostuj¹ce exploit kity.
